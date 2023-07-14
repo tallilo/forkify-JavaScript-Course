@@ -151,7 +151,9 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 };
-
+const newFeature = function () {
+  console.log('welcome to my first application');
+};
 const init = function () {
   bookmarksView.addHandlerRender(controlerBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -160,6 +162,6 @@ const init = function () {
   searchView.addHandlerRender(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('hellow');
+  newFeature();
 };
 init();
